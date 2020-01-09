@@ -1,0 +1,35 @@
+Student propunator: Drelciuc Andrei-Florin
+Grupa:223
+
+Ce va afisa urmatoarea secventa de cod?
+
+class Program
+    {
+        public bool[] Modify(params int[] x)
+        {
+            bool[] var = new bool[x.Length];
+            for(int i=0; i< x.Length; i++)
+            {
+                var[i] = (x[i]%2).Equals(1);
+            }
+            return var;
+        }
+        static void Main(string[] args)
+        {
+            Program prog = new Program();
+            foreach(bool el in prog.Modify(1, 2, 3, 4, 5))
+            {
+                Console.Write(el);
+            }
+        }
+    }
+
+TrueFalseTrueFalseTrue - corect
+
+TrueTrueTrueTrueTrue
+
+Eroare, nu se va afisa nimic
+
+FalseTrueFalseTrueFalse
+
+Secventa de cod parcurge un sir de numere intregi si compara pe rand daca este numar impar, rezultatul fiind stocat in sirul de booleanuri. La final rezultatele sunt afisate una langa alta

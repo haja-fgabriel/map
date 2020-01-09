@@ -26,7 +26,7 @@ public class ExpressionParser {
     private static void validate(String[] args) throws Exception {
         for (int i = 0; i < args.length; i++) {
             if (isSign(args[i])) {
-                if (i == 0 || i == args.length)
+                if (i == 0 || i == args.length - 1)
                     throw new Exception("Sign must be preceded by a number");
                 if (isSign(args[i+1]))
                     throw new Exception("Cannot have consecutive signs");

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<students>
+    <homework hid="12" sid="10">
+        <number>10.0</number>
+        <feedback>excelenta</feedback>
+        <date>2019-12-04T17:53:38.188460900</date>
+        <professor>istvanc</professor>
+    </homework>
+    <homework hid="13" sid="10">
+        <number>10.0</number>
+        <feedback>excelenta</feedback>
+        <date>2019-12-04T19:21:47.344674500</date>
+        <professor>gabis</professor>
+    </homework>
+    <homework hid="13" sid="13">
+        <number>10.0</number>
+        <feedback>excelenta</feedback>
+        <date>2019-12-04T19:23:34.974349300</date>
+        <professor>gabis</professor>
+    </homework>
+    <homework hid="13" sid="16">
+        <number>10.0</number>
+        <feedback>excelenta</feedback>
+        <date>2019-12-04T19:55:20.702227500</date>
+        <professor>gabis</professor>
+    </homework>
+</students>

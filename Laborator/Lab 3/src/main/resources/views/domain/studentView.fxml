@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ubb.scs.map.ir.seminar.studentsmanagement.controllers.domain.StudentController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <left>
+        <AnchorPane maxWidth="0"/>
+    </left>
+    <center>
+        <VBox>
+            <HBox>
+                <Label text="Search" prefWidth="50" />
+                <TextField HBox.hgrow="ALWAYS"/>
+                <ComboBox />
+            </HBox>
+            <TableView fx:id="view">
+                <columns>
+                    <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+                    <TableColumn fx:id="nameColumn" text="Name" prefWidth="180"/>
+                    <TableColumn fx:id="mediaColumn" text="Media" prefWidth="60"/>
+                    <TableColumn fx:id="groupColumn" text="Group" prefWidth="100"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+    <right>
+        <GridPane minWidth="300" maxWidth="300">
+            <GridPane minHeight="320" maxHeight="360" GridPane.rowIndex="0" GridPane.columnIndex="0" vgap="6" hgap="4">
+                <padding> <Insets top="16" bottom="16" left="16" right="16"/> </padding>
+                <GridPane GridPane.rowIndex="0" GridPane.columnIndex="0"
+                          hgap="6" vgap="4">
+
+
+                    <Label text="ID" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                    <TextField fx:id="textfieldID" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                    <Label text="Name" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                    <TextField fx:id="textfieldName" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                    <Label text="Media" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                    <TextField fx:id="textfieldMedia" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                    <Label text="Group" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                    <TextField fx:id="textfieldGroup" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                </GridPane>
+
+                <GridPane GridPane.rowIndex="1" GridPane.columnIndex="0" vgap="4" hgap="6">
+                    <Button onAction="#handleAdd" text="Add"   fx:id="addButton" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                    <Button onAction="#handleUpdate" text="Update" fx:id="updateButton" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                    <Button onAction="#handleRemove" text="Remove" fx:id="removeButton" GridPane.rowIndex="0" GridPane.columnIndex="2" />
+                </GridPane>
+            </GridPane>
+            <!-- TODO add actions to buttons -->
+            <!-- connect UI elements to controllers -->
+
+            <!-- Deadzone for our grid panes -->
+            <AnchorPane GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+
+            <GridPane GridPane.rowIndex="2" GridPane.columnIndex="0">
+
+            </GridPane>
+
+        </GridPane>
+    </right>
+</BorderPane>

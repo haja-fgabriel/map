@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<students>
+    <gradeDTO hid="12" sid="10">
+        <number>7.0</number>
+        <feedback>foarte buna</feedback>
+        <verifiedWeek>10</verifiedWeek>
+        <deadlineWeek>13</deadlineWeek>
+    </gradeDTO>
+    <gradeDTO hid="13" sid="10">
+        <number>10.0</number>
+        <feedback>excelenta</feedback>
+        <verifiedWeek>10</verifiedWeek>
+        <deadlineWeek>13</deadlineWeek>
+    </gradeDTO>
+    <gradeDTO hid="12" sid="13">
+        <number>6.5</number>
+        <feedback>foarte buna</feedback>
+        <verifiedWeek>10</verifiedWeek>
+        <deadlineWeek>13</deadlineWeek>
+    </gradeDTO>
+    <gradeDTO hid="13" sid="13">
+        <number>10.0</number>
+        <feedback>excelenta</feedback>
+        <verifiedWeek>10</verifiedWeek>
+        <deadlineWeek>13</deadlineWeek>
+    </gradeDTO>
+    <gradeDTO hid="13" sid="16">
+        <number>10.0</number>
+        <feedback>excelenta</feedback>
+        <verifiedWeek>10</verifiedWeek>
+        <deadlineWeek>13</deadlineWeek>
+    </gradeDTO>
+</students>

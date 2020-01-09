@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<students>
+    <student id="16">
+        <name>Manu</name>
+        <media>10.0</media>
+        <group>223</group>
+    </student>
+    <student id="10">
+        <name>Mihoc</name>
+        <media>10.0</media>
+        <group>224</group>
+    </student>
+    <student id="13">
+        <name>Ioana</name>
+        <media>10.0</media>
+        <group>226</group>
+    </student>
+    <student id="14">
+        <name>Georgescu</name>
+        <media>7.0</media>
+        <group>241</group>
+    </student>
+    <student id="15">
+        <name>Maria</name>
+        <media>10.0</media>
+        <group>223</group>
+    </student>
+</students>

@@ -74,6 +74,7 @@ public class Complex {
     }
 
     private static double parseFactor(String expr) {
+        //if (expr.indexOf('i') > 0)
         if (expr.charAt(0) == '*')
             return Double.parseDouble(expr.substring(1));
         else if (expr.charAt(0) == '/')

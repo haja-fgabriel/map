@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ubb.scs.map.ir.seminar.studentsmanagement.controllers.domain.GradeController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <left>
+        <AnchorPane maxWidth="0"/>
+    </left>
+    <center>
+        <TableView fx:id="view">
+            <columns>
+                <TableColumn fx:id="hidColumn" text="Homework ID"/>
+                <TableColumn fx:id="sidColumn" text="Student ID"/>
+                <TableColumn fx:id="valueColumn" text="Value"/>
+                <TableColumn fx:id="professorColumn" text="Professor"/>
+                <TableColumn fx:id="feedbackColumn" text="Feedback"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <right>
+        <GridPane minWidth="300" maxWidth="300">
+            <GridPane minHeight="320" maxHeight="360" GridPane.rowIndex="0" GridPane.columnIndex="0" vgap="6" hgap="4">
+                <padding> <Insets top="16" bottom="16" left="16" right="16"/> </padding>
+                <GridPane GridPane.rowIndex="0" GridPane.columnIndex="0"
+                         hgap="6" vgap="4">
+
+
+                    <Label text="Homework ID" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                    <!-- <TextField fx:id="textfieldHID" GridPane.rowIndex="0" GridPane.columnIndex="1"/> -->
+                    <ComboBox fx:id="comboboxHID" editable="false" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                    <Label text="Student ID" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+<!--                    <TextField fx:id="textfieldSID" GridPane.rowIndex="1" GridPane.columnIndex="1"/>-->
+
+                    <ComboBox fx:id="comboboxSID" editable="false" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                    <Label text="Value" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                    <TextField fx:id="textfieldValue" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                    <Label text="Professor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                    <TextField fx:id="textfieldProfessor" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                    <Label text="Feedback" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.valignment="TOP"/>
+                    <TextArea maxWidth="190" fx:id="textfieldFeedback" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                </GridPane>
+
+                <GridPane GridPane.rowIndex="1" GridPane.columnIndex="0" vgap="4" hgap="6">
+                    <Button onAction="#handleAdd" text="Add" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                    <Button onAction="#handleUpdate" text="Update" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                    <Button onAction="#handleRemove" text="Remove" GridPane.rowIndex="0" GridPane.columnIndex="2" />
+                </GridPane>
+
+                <GridPane GridPane.rowIndex="2" GridPane.columnIndex="0" vgap="4" hgap="6">
+                    <Button onAction="#handleStudentDelays" GridPane.columnIndex="0"
+                            GridPane.rowIndex="0" text="Students w/o delays"/>
+                    <Button onAction="#handlePassedStudents" GridPane.columnIndex="0"
+                            GridPane.rowIndex="1" text="Passed students"/>
+                    <Button onAction="#handleAverageStudents" GridPane.columnIndex="0"
+                            GridPane.rowIndex="2" text="Average for students"/>
+                    <Button onAction="#handleMostDifficultHomework" GridPane.columnIndex="0"
+                            GridPane.rowIndex="3" text="Most difficult homework" />
+
+                </GridPane>
+            </GridPane>
+            <!-- TODO add actions to buttons -->
+            <!-- connect UI elements to controllers -->
+
+            <!-- Deadzone for our grid panes -->
+            <AnchorPane GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+
+            <GridPane GridPane.rowIndex="2" GridPane.columnIndex="0">
+
+            </GridPane>
+
+        </GridPane>
+    </right>
+
+
+</BorderPane>
