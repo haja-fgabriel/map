@@ -10,8 +10,8 @@
 # default for csharp files.
 # Note: This is only used by command line
 ###############################################################################
-*.java   diff=java
-*.cs     diff=csharp
+*.java   text diff=java
+*.cs     text diff=csharp
 *.cs     linguist-detectable=true
 
 ###############################################################################
